@@ -1,0 +1,18 @@
+{
+  "name": "modemanager",
+  "version": "1.0.0",
+  "description": "nodejs manager using web console",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "author": "@rahulTripathi",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "forever": "^0.15.3",
+    "shelljs": "^0.8.1",
+    "socket.io": "^2.1.0"
+  }
+}

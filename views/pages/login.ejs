@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Shell</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <meta name="theme-color" content="#6ce100" />
+    <script src="https://apis.google.com/js/api:client.js"></script>
+    
+    <style>
+    body {
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1 0 auto;
+    }
+
+    body {
+      background: #fff;
+    }
+
+    .input-field input[type=date]:focus + label,
+    .input-field input[type=text]:focus + label,
+    .input-field input[type=email]:focus + label,
+    .input-field input[type=password]:focus + label {
+      color: #e91e63;
+    }
+
+    .input-field input[type=date]:focus,
+    .input-field input[type=text]:focus,
+    .input-field input[type=email]:focus,
+    .input-field input[type=password]:focus {
+      border-bottom: 2px solid #e91e63;
+      box-shadow: none;
+    }
+   
+  </style>
+</head>
+
+<body>
+ 
+  <main>
+    <center>
+      <img class="responsive-img" style="width: 230px; height:230px; margin-top:0px;" src="/images/logo.png" />
+
+      <div class="container">
+        <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+
+          <form class="col s12" method="post">
+            <div class='row'>
+              <div class='col s12'>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='input-field col s12'>
+                <input class='validate' type='text' />
+                <label for='email'>Enter your Username</label>
+              </div>
+            </div>
+
+            <div class='row'>
+              <div class='input-field col s12'>
+                <input class='validate' type='password' name='password' id='password' />
+                <label for='password'>Enter your password</label>
+              </div>
+              <label style='float: right;'>
+								<a  style="color: #6ce100;" href='#!'><b>Forgot Password?</b></a>
+							</label>
+            </div>
+
+            <br />
+            <center>
+              <div class='row'>
+                <div class="col s12 m6">
+                <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect disabled' style="background-color: #6ce100;">Login</button></div>
+                 <div class="col s12 m6">
+                <a href="/demo" class='col s12 btn btn-large waves-effect' style="background-color: #6ce100;">Demo</a></div>
+                    <center>
+            <script>
+              /*  var googleUser = {};
+                var startApp = function() {
+                  gapi.load('auth2', function(){
+                    auth2 = gapi.auth2.init({
+                      client_id: '976887664955-8p3cker58prgj3u8nojir7sf603o00nq.apps.googleusercontent.com',
+                      cookiepolicy: 'single_host_origin',
+                    });
+                    attachSignin(document.getElementById('customBtn'));
+                  });
+                };
+              
+                function attachSignin(element) {
+                  console.log(element.id);
+                  auth2.attachClickHandler(element, {},
+                      function(googleUser) {
+                        $("#go").hide();
+
+                       
+                           console.log( googleUser.getBasicProfile());
+                      }, function(error) {
+                        alert(JSON.stringify(error, undefined, 2));
+                      });
+                }*/
+                </script>
+               <div class="col s12">
+               <p><h5>OR</h5></p>
+                <div id="gSignInWrapper">
+                  
+                  <div id="customBtn" class="customGPlusSignIn">
+                      <button id="go" type='submit' class='btn btn-large waves-effect disabled' style="background-color: #6ce100; width:250px;"><span><img src="/images/search.svg" style="width:32px; height:32px; vertical-align:middle; margin-right:10px;"><p style="display: inline;">Login with Google</p></span></button>
+                  </div>
+                </div>
+             
+                <script>//startApp();</script>
+              </div>
+        </center>
+              </div>
+            </center>
+          </form>
+        </div>
+      </div>
+     
+    </center>
+
+    
+  </main>
+
+  
+</body>
+
+</html>

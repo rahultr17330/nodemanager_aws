@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>Shell</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/dots.css">
+ <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.slim.js"></script>
+    <script src="/js/nodemanager.js"></script>
+    <meta name="theme-color" content="#6ce100" />
+    <style type="text/css">
+    
+    .card{
+      background-color: transparent;
+    }
+    </style>
+</head>
+
+<body>
+<div class="navbar-fixed">
+  <nav style="background-color:#03a9f4;">
+    <div class="nav-wrapper" >
+      <a href="#" class="brand-logo" style="font-family: 'Open Sans', sans-serif;">NodeManager</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+     </div>   
+     <div class="row hide-on-med-and-down">
+  <div class="col s12 m4">
+
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="/images/ram.svg" style="height: 64px; width: 64px; vertical-align: middle; margin:10px;">
+      </div>
+        <div class="card-content">
+    <p id ="ram"><center><div class="spinner"></div></center></p>
+    </div>
+  </div>
+</div>
+   <div class="col s12 m4">
+
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="/images/cpu.svg" style="height: 64px; width: 64px; vertical-align: middle; margin:10px;">
+      </div>
+        <div class="card-content">
+          <p id="cpu"><center><div class="spinner"></div></center></p>
+        </div>
+    </div>
+  </div>
+   <div class="col s12 m4">
+
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="/images/hard-disk.svg" style="height: 64px; width: 64px; vertical-align: middle; margin:10px;">
+      </div>
+        <div class="card-content">
+          <p id="file"><center><div class="spinner"></div></center></p>        </div>
+    </div>
+  </div>
+        </div>
+<div class="row">
+  <div id="curve_chart" class="col s12" style="width: 100%; height: 500px;"></div>
+</div>
+</body>
+</html>
+ 
